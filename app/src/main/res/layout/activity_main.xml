@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/page_title"
+        android:id="@+id/tv_page_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tab_cars"
+        android:id="@+id/tv_tab_cars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -27,26 +27,99 @@
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_page_title"/>
 
     <TextView
-        android:id="@+id/tab_favorites"
+        android:id="@+id/tv_tab_favorites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/favorites"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/page_title"
-        app:layout_constraintLeft_toRightOf="@+id/tab_cars"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_page_title"
+        app:layout_constraintLeft_toRightOf="@+id/tv_tab_cars"/>
+
+    <TextView
+        android:id="@+id/tv_car1price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_price"
+        app:layout_constraintStart_toStartOf="@id/tv_page_title"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car_image"
+        />
+
+    <TextView
+        android:id="@+id/tv_car1price_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$100.000"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_car1price"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car_image"
+        />
+
+    <TextView
+        android:id="@+id/tv_car1battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battery"
+        app:layout_constraintStart_toStartOf="@id/tv_car1price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_car1price"
+        />
+
+    <TextView
+        android:id="@+id/tv_car1battery_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="93,4 kWh"
+        app:layout_constraintLeft_toLeftOf="@id/tv_car1price_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_car1price_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_car1potency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/potency"
+        app:layout_constraintStart_toStartOf="@id/tv_car1price"
+        app:layout_constraintTop_toBottomOf="@id/tv_car1battery"
+        />
+    <TextView
+        android:id="@+id/tv_car1potency_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="140cv"
+        app:layout_constraintStart_toStartOf="@id/tv_car1battery_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_car1battery_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_car1recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recharge"
+        app:layout_constraintStart_toStartOf="@id/tv_car1potency"
+        app:layout_constraintTop_toBottomOf="@id/tv_car1potency"
+        />
+    <TextView
+        android:id="@+id/tv_car1recharge_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20min"
+        app:layout_constraintStart_toStartOf="@id/tv_car1potency_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_car1potency_value"
+        />
+
 
     <ImageView
-        android:id="@+id/car_image"
+        android:id="@+id/iv_car_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/dolphin_car"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="171dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_page_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tab_cars" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

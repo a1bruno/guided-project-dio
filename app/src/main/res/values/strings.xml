@@ -3,4 +3,8 @@
     <string name="page_title">Electric Car</string>
     <string name="car_page">Carros</string>
     <string name="favorites">Favoritos</string>
+    <string name="car_price">Preço:</string>
+    <string name="battery">Bateria:</string>
+    <string name="potency">Potência:</string>
+    <string name="recharge">Recarga:</string>
 </resources>
