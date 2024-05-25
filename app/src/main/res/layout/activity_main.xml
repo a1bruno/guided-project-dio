@@ -40,6 +40,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_page_title"
         app:layout_constraintLeft_toRightOf="@+id/tv_tab_cars"/>
 
+    <ImageView
+        android:id="@+id/iv_car_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/electric_car"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_page_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tab_cars" />
+
     <TextView
         android:id="@+id/tv_car1price"
         android:layout_width="wrap_content"
@@ -111,15 +120,46 @@
         app:layout_constraintTop_toBottomOf="@id/tv_car1potency_value"
         />
 
+    <EditText
+        android:id="@+id/et_autonomy_calc"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:maxLength="10"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/autonomy_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_car1recharge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
-    <ImageView
-        android:id="@+id/iv_car_image"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/et_kwh_done"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10"
+        android:hint="@string/kwh_done_value"
+        app:layout_constraintTop_toBottomOf="@+id/et_autonomy_calc"
+        app:layout_constraintStart_toStartOf="@id/et_autonomy_calc"
+        app:layout_constraintEnd_toEndOf="@id/et_autonomy_calc"
+        />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/dolphin_car"
-        android:layout_marginTop="16dp"
-        app:layout_constraintLeft_toLeftOf="@id/tv_page_title"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tab_cars" />
+        android:text="@string/calculate_btn_text"
+        app:layout_constraintTop_toBottomOf="@+id/et_kwh_done"
+        app:layout_constraintStart_toStartOf="@id/et_kwh_done"
+        app:layout_constraintEnd_toEndOf="@id/et_kwh_done"
+        />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

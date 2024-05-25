@@ -7,4 +7,7 @@
     <string name="battery">Bateria:</string>
     <string name="potency">Potência:</string>
     <string name="recharge">Recarga:</string>
+    <string name="autonomy_value">Preço Kwh</string>
+    <string name="kwh_done_value">Kwh percorridos</string>
+    <string name="calculate_btn_text">Calcular</string>
 </resources>
