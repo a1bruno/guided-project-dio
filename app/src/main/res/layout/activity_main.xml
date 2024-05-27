@@ -127,7 +127,7 @@
         android:layout_margin="16dp"
         android:maxLength="10"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:hint="@string/autonomy_value"
         app:layout_constraintTop_toBottomOf="@id/tv_car1recharge"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,7 +140,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="4dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:maxLength="10"
         android:hint="@string/kwh_done_value"
         app:layout_constraintTop_toBottomOf="@+id/et_autonomy_calc"
@@ -158,8 +158,14 @@
         app:layout_constraintEnd_toEndOf="@id/et_kwh_done"
         />
 
-
-
+    <TextView
+        android:id="@+id/tv_calc_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_calculate"
+        app:layout_constraintStart_toStartOf="@id/btn_calculate"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
